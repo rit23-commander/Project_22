@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">project_connect</string>
+
+    <!-- main -->
+
+    <string name ="hit_bn">Login</string>
+    <string name = "hit_bn2">Sign in</string>
+
+    <!-- log fag -->
+    <string name = "hint">Email/password</string>
+    <string name = "hit2">password</string>
+    <string name = "fog">forgot Password</string>
+    <string name = "bnlog">Login</string>
+
+    <!-- check_my -->
+
+
+      <!-- new_me -->
+         <string name = "newmehit">Enter full name</string>
+         <string name = "newmehit2">Email id</string>
+         <string name = "newpass">new password</string>
+          <string name="newphone">Phone number</string>
+         <string name = "born">your birthday</string>
+         <string name = "newbn">done</string>
+
+
+
+</resources>
