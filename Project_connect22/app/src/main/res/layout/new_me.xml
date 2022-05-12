@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -6,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
-        android:id = "@+id/up_down"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:screenReaderFocusable="true"
@@ -43,7 +41,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/npass"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -52,7 +50,6 @@
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="166dp"
                 app:layout_constraintTop_toBottomOf="@id/usname"
-                app:passwordToggleEnabled="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
@@ -61,11 +58,42 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:hint="@string/newmehit2"
-                    android:inputType="textPassword"/>
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/poo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="166dp"
+                app:layout_constraintTop_toBottomOf="@id/usname"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:hint="@string/newpoo"
+                    android:inputType="text"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
-
+            <TextView
+                android:id="@+id/extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text = "@string/extra"
+                android:textColor="@android:color/holo_purple"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintStart_toStartOf="parent"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/conf_pass"
                 android:layout_width="match_parent"
@@ -75,7 +103,7 @@
                 android:layout_marginRight="45dp"
                 tools:layout_editor_absoluteX="1dp"
                 tools:layout_editor_absoluteY="166dp"
-                app:layout_constraintTop_toBottomOf="@id/npass"
+                app:layout_constraintTop_toBottomOf="@id/extra"
                 app:passwordToggleEnabled="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
